@@ -12,13 +12,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Preparar Java 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
-
-      - name: Preparar Android SDK
-        uses: android-actions/setup-android@v3
 
       - name: Preparar Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -26,7 +23,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Compilar el APK
-        run: gradle assembleRelease --no-daemon
+        run: gradle assembleRelease --no-daemon --stacktrace
 
       - name: Guardar el APK
         uses: actions/upload-artifact@v4
