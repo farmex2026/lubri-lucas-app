@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     /* ------------------------------------------------------------------ *
      *  LA DIRECCION DE LA WEB VA ACA. Es lo unico que hay que cambiar.    *
      * ------------------------------------------------------------------ */
-    private static final String WEB = "https://PONER-ACA-LA-DIRECCION/";
+    private static final String WEB = "https://farmex2026.github.io/Lubri-Luca/";
 
     private WebView web;
 
