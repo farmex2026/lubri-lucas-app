@@ -1,1 +1,0 @@
-# lubri-lucas-app
